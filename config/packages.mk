@@ -1,27 +1,17 @@
-# VoltageOS packages
+# KaliOS packages
 PRODUCT_PACKAGES += \
     SimpleDeviceConfig \
-    Covers \
-    Etar \
     ThemePicker \
     AvatarPicker \
     ThemesStub \
-    Jellyfish \
-    LogViewer \
-    Gramophone \
-    GameSpace \
     VoltageSetupWizard \
-    Seedvault \
     Datura \
-    ExactCalculator \
     Glimpse \
-    talkback \
     LMOFreeform \
     LMOFreeformSidebar \
     OmniJaws \
     AppCompatConfig \
-    VoltageJump \
-    AppDataBackup
+    Cromite
 
 ifeq ($(VOLTAGE_BUILD_TYPE),OFFICIAL)
     PRODUCT_PACKAGES += \
@@ -33,26 +23,26 @@ PRODUCT_PACKAGES += \
     Aperture
 endif
 
-# BtHelper
+# Bluetooth Helper
 PRODUCT_PACKAGES += \
     BtHelper
 
-# Extra tools in Voltage
+# Extra tools
 PRODUCT_PACKAGES += \
     awk \
     bzip2 \
     curl \
     getcap \
     libsepol \
-    setcap \
+    setcap
 
-# Filesystems tools
+# Filesystem tools
 PRODUCT_PACKAGES += \
     fsck.exfat \
     mke2fs \
     mkfs.exfat
 
-# VoltageOS UDFPS animations
+# UDFPS animations
 ifeq ($(EXTRA_UDFPS_ANIMATIONS),true)
 PRODUCT_PACKAGES += \
     UdfpsIcons \
