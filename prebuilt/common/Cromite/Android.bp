@@ -1,0 +1,6 @@
+android_app_import {
+    name: "Cromite",
+    apk: "arm64_ChromePublic.apk",
+    presigned: true,
+    product_specific: true,
+}
